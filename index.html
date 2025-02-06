@@ -5,10 +5,21 @@
     <title>Resume of Philip Costache</title>
   </head>
   <body>
+    <h1>Resume</h1>
+    <section>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work-history">Work History</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#mailing-address">Mailing Address</a></li>
+      </ul>
+    </section>
     <main>
-      <h1>Resume</h1>
       <section>
-        <h2>Tony Alicea</h2>
+        <h2>Philip Costache</h2>
         <p>Coder, UX Designer, Instructor</p>
         <dl>
           <dt>Website</dt>
@@ -19,16 +30,16 @@
           <dd><a href="https://www.twitter.com/philipcostache" target="_blank">@tphilipcostache</a></dd>
         </dl>
       </section>
-      <article>
+      <article id="about-me">
         <header>
           <h2>About Me</h2>
         </header>
         <p>
-          Hi! I'm Tony Alicea and I'm <em>happy</em> to have you as a student in my courses.<aside><small>Don't imitate, understand!</small></aside>
+          Hi! I'm Philip Costache and I'm <em>happy</em> to have you as a student in my courses.<aside><small>Don't imitate, understand!</small></aside>
         </p>
         <footer>Contact me</footer>
       </article>
-      <section>
+      <section id="services">
         <h2>Services</h2>
         <ul>
           <li>Web Development</li>
@@ -36,7 +47,7 @@
           <li>Training</li>
         </ul>
       </section>
-      <section>
+      <section id="skills">
         <h2>Skills</h2>
         <ul>
           <li>
@@ -53,7 +64,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="work-history">
         <h2>Work History</h2>
         <ol>
           <li>
@@ -74,10 +85,10 @@
         </ol>
       </section>
       <!-- -->
-      <section>
+      <section id="portfolio">
         <h2>Portfolio</h2>
       </section>
-      <section>
+      <section id="testimonials">
         <h2>Testimonials</h2>
         <blockquote>
           <p>I love Philip's courses!</p>
@@ -86,12 +97,58 @@
           <p>Philip's courses <strong>helped me get a job.</strong></p>
         </blockquote>
       </section>
-      <section>
+      <section id="mailing-address">
         <h2>Mailing Address</h2>
-        <address>
+        <br>
             111 Main St. <br>
             Somewhere, NY 33333
         </address>
+      </section>
+      <section>
+        <h2>Contact Me</h2>
+        <form action="do-something.html">
+          <p>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" required>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </p>
+          <p>
+            <label for="contact-reasons">Contact Reasons</label>
+            <select name="contact-reasons" id="contact-reasons">
+              <option value="job-interview">Job Interview</option>
+              <option value="need-contractor">Need Contractor</option>
+            </select>
+          </p>
+          <p>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" rows="3"></textarea>
+          </p>
+          <fieldset>
+            <legend>Best Contact Time</legend>
+            <p>
+              <label for="contact-time-morning">Morning</label>
+              <input type="radio" id="contact-time-morning" name="contact-time">
+            </p>
+            <p>
+              <label for="contact-time-afternoon">Afternoon</label>
+              <input type="radio" id="contact-time-afternoon" name="contact-time">
+            </p>
+            <p>
+              <label for="contact-time-evening">Evening</label>
+              <input type="radio" id="contact-time-evening" name="contact-time">
+            </p>
+            <p>
+              <label for="asap">ASAP</label>
+              <input type="checkbox" name="asap" id="asap">
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
       </section>
     </main>
   </body>
